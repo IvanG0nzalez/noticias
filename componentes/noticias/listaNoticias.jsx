@@ -5,7 +5,7 @@ import { obtener, url_api } from "@/hooks/Conexion";
 }*/
 
 export async function ListaNoticias() {
-    const noticias = await obtener("servidorNoticias.php?action=refrescaNoticia");
+    const noticias = await obtener('servidorNoticias.php?action=refrescaNoticia');
     console.log(noticias);
     return (
         <div className="row">

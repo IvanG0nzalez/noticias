@@ -14,7 +14,7 @@ export default function Menu() {
                             <Link href="/" className="nav-link active" aria-current="page">Principal</Link>
                         </li>
                         <li className="nav-item">
-                            <Link href="/inicio_sesion" className="nav-link active" aria-current="page">Inicio Sesión</Link>
+                            <Link href="/inicio_sesion" className="nav-link active" aria-current="page">Acceder</Link>
                         </li>
                     </ul>
                 </div>
