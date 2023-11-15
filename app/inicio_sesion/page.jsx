@@ -33,6 +33,7 @@ export default function Inicio_sesion() {
         //JOption 
         mensajes("Has ingresado al sistema!", "Bienvenido");
         router.push("/principal");
+        router.refresh();
       }
 
     });

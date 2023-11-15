@@ -10,10 +10,19 @@ export async function obtener(recurso) {
   return await response.json();
 }
 
-export async function enviar(recurso, data) {
-  const headers = {
-    "Accept": "application/json",
-  };
+export async function enviar(recurso, data, key='') {
+  let headers = []
+  if(key !== '') {
+    headers = {
+      "Accept": "application/json",
+    };
+  } else {
+    headers = {
+      "Accept": "application/json",
+      "API-KEY": key
+    };
+  }
+  
 
   const response = await fetch(URL + recurso, {
     method: "POST",
